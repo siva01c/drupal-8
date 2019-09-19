@@ -9,3 +9,4 @@ How start project
  * docker-compose exec drupal bash
  * composer install
 
+You will find your website on DAO_PORT_NGINX port, which is defined at .env file. Default location is http://localhost:1577.
