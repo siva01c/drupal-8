@@ -82,9 +82,6 @@
             }
         },
         "patches": {
-            "drupal/config_update": {
-                "https://www.drupal.org/project/config_update/issues/2974637 - Add support for Drush 9": "https://www.drupal.org/files/issues/2019-02-12/2974637-50.patch"
-            }
         },
         "enable-patching": true
     }

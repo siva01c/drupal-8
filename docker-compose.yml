@@ -3,10 +3,10 @@ services:
 
   drupal:
     user: "${DAO_DRUPAL}"
-    image:  siva01/drupal_php7.3
+    image: siva01/drupal_php7.3
     env_file:
       - .env
-    volumes:  [ "${DAO_PROJECT_DIR}:/var/www/html:delegated" ]
+    volumes: [ "${DAO_PROJECT_DIR}:/var/www/html:delegated" ]
 
   adminer:
     image: adminer:latest
@@ -16,10 +16,10 @@ services:
     user: "${DAO_DRUPAL}"
     image: siva01/drupal-nginx
     ports: [ "${DAO_PORT_NGINX}:8080" ]
-    volumes:  [ "${DAO_PROJECT_DIR}:/var/www/html:delegated" ]
+    volumes: [ "${DAO_PROJECT_DIR}:/var/www/html:delegated" ]
 
   mysql:
-    image:  mysql:5.7.31
+    image: mysql:5.7.31
     ports: [ "${DAO_PORT_MYSQL}:3306" ]
     environment:
       MYSQL_ROOT_PASSWORD: "${DAO_MYSQL_ROOT_PASSWORD}"
